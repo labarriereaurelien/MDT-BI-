@@ -19,20 +19,31 @@
       box-shadow: 0 0 20px rgba(0,0,0,0.7);
     }
 
+    h2 {
+      margin-bottom: 10px;
+    }
+
     label {
       display: block;
       margin-top: 15px;
+      font-size: 14px;
       color: #9db4ff;
     }
 
     input, textarea, select {
       width: 100%;
       background: #0c1630;
-      border: 1px solid #1e3a8a;
+      border: 0.5px solid #1e3a8a;
       color: white;
-      padding: 10px;
+      padding: 5px;
       margin-top: 5px;
-      border-radius: 6px;
+      border-radius: 5px;
+      outline: none;
+    }
+
+    textarea {
+      height: 120px;
+      resize: none;
     }
 
     .btn {
@@ -42,8 +53,13 @@
       border: none;
       color: white;
       border-radius: 6px;
+      font-size: 16px;
       float: right;
       cursor: pointer;
+    }
+
+    .btn:hover {
+      background: #1d4ed8;
     }
   </style>
 </head>
@@ -52,22 +68,19 @@
 <div class="modal">
   <h2>Créer un dossier</h2>
 
-  <label>Nom du dossier *</label>
+  <label>Nom du dossier </label>
   <input type="text" placeholder="Ex: Double meurtre">
 
-  <label>Contexte *</label>
+  <label>Contexte</label>
   <textarea placeholder="Décrire les faits..."></textarea>
 
   <label>Lead d'enquête</label>
-  <select>
-    <option>02 | Ruben Serrano</option>
-    <option>05 | John Carter</option>
-  </select>
+  <input type="text" placeholder="Ex: Lead d'enquête 42">
+   </select>
 
   <label>Co-lead</label>
-  <select>
-    <option>Sélectionnez le co-lead</option>
-    <option>07 | Mike Johnson</option>
+   <input type="text" placeholder="Ex: Lead d'enquête 42">
+
   </select>
 
   <button class="btn">Suivant</button>
