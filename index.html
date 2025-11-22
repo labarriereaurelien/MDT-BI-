@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>LSPD MDT</title>
+  <style>
+    body {
+      background: #0b1220;
+      font-family: Arial, sans-serif;
+      color: white;
+    }
+
+    .modal {
+      width: 700px;
+      margin: 50px auto;
+      background: #101c36;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.7);
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      color: #9db4ff;
+    }
+
+    input, textarea, select {
+      width: 100%;
+      background: #0c1630;
+      border: 1px solid #1e3a8a;
+      color: white;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 6px;
+    }
+
+    .btn {
+      margin-top: 20px;
+      background: #2563eb;
+      padding: 10px 20px;
+      border: none;
+      color: white;
+      border-radius: 6px;
+      float: right;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<div class="modal">
+  <h2>Créer un dossier</h2>
+
+  <label>Nom du dossier *</label>
+  <input type="text" placeholder="Ex: Double meurtre">
+
+  <label>Contexte *</label>
+  <textarea placeholder="Décrire les faits..."></textarea>
+
+  <label>Lead d'enquête</label>
+  <select>
+    <option>02 | Ruben Serrano</option>
+    <option>05 | John Carter</option>
+  </select>
+
+  <label>Co-lead</label>
+  <select>
+    <option>Sélectionnez le co-lead</option>
+    <option>07 | Mike Johnson</option>
+  </select>
+
+  <button class="btn">Suivant</button>
+</div>
+
+</body>
+</html>
